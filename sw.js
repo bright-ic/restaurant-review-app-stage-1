@@ -23,7 +23,7 @@ const appCacheName = "resturant-review-app-cache-v1";
 /**************************Service worker Install event listener ******************************************/
 // install service worker
 self.addEventListener('install', event => {
-    event.waitUntill(
+    event.waitUntil(
         // creating/opening cache
         caches.open(appCacheName).then(cache => {
             console.log('service worker installed succesfully');
