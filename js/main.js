@@ -164,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = imgPath_1x;
   image.srcset = imgPath_1x + " 400w," + imgPath + " 800w";
   //image.sizes = "(max-width: 700px) 80vw, 33vw";
-  image.alt = restaurant.name;
+  image.alt = restaurant.name + "picture";
   li.append(image);
 
   const name = document.createElement('h1');
