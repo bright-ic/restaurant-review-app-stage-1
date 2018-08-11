@@ -1,22 +1,23 @@
 const filesToCache = [
-    "./",
-    "./index.html",
-    "./restaurant.html",
-    "./css/styles.css",
-    "./data/restaurants.json",
-    "./js/dbhelper.js",
-    "./js/main.js",
-    "./js/restaurant_info.js",
-    "./img/1.jpg",
-    "./img/2.jpg",
-    "./img/3.jpg",
-    "./img/4.jpg",
-    "./img/5.jpg",
-    "./img/6.jpg",
-    "./img/7.jpg",
-    "./img/8.jpg",
-    "./img/9.jpg",
-    "./img/10.jpg"
+    './',
+    './index.html',
+    './restaurant.html',
+    './css/styles.css',
+    './data/restaurants.json',
+    './js/dbhelper.js',
+    './js/main.js',
+    './js/restaurant_info.js',
+    './img/1.jpg',
+    './img/2.jpg',
+    './img/3.jpg',
+    './img/4.jpg',
+    './img/5.jpg',
+    './img/6.jpg',
+    './img/7.jpg',
+    './img/8.jpg',
+    './img/9.jpg',
+    './img/10.jpg',
+    './favicon.png'
 ];
 const appCacheName = "resturant-review-app-cache-v1";
 
@@ -58,15 +59,15 @@ self.addEventListener('fetch', event => {
 
   if (requestUrl.origin === location.origin) {
          if (requestUrl.pathname === './') {
-            event.respondWith(caches.match("./index.html"));
+            event.respondWith(caches.match('./index.html'));
             return;
         }
         if (requestUrl.pathname === './index.html') {
-            event.respondWith(caches.match("./index.html"));
+            event.respondWith(caches.match('./index.html'));
             return;
         }
         if (requestUrl.pathname === '/restaurant.html') {
-            event.respondWith(caches.match("./restaurant.html"));
+            event.respondWith(caches.match('./restaurant.html'));
             return;
         }
     }
@@ -82,8 +83,7 @@ self.addEventListener('fetch', event => {
         return cache.match(storageUrl).then(response =>{
             if(response) {
                 return response;
-            }
-            else {
+            } else {
                 return fetch(request).then(networkResponse =>{
                     cache.put(storageUrl, networkResponse.clone());
                     return networkResponse;
@@ -93,5 +93,5 @@ self.addEventListener('fetch', event => {
         //return response || networkfetch;
       });
     });
-} 
+};
 /*************************************************************************************************************/
