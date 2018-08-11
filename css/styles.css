@@ -131,11 +131,12 @@ nav h1 a {
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
+   padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
  /*  height: 50px; */
   background-color: #3397DB;
   align-items: center;
-  padding: 10px;
 }
 .filter-options h2 {
   color: #000;
@@ -392,7 +393,6 @@ nav h1 a {
 
   .filter-options {
     justify-content: center;
-    padding: 10px;
   }
 
   .filter-options h2 {
