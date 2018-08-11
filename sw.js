@@ -57,16 +57,16 @@ self.addEventListener('fetch', event => {
    const requestUrl = new URL(event.request.url);
 
   if (requestUrl.origin === location.origin) {
-         if (requestUrl.pathname === '/') {
-            event.respondWith(caches.match("/index.html"));
+         if (requestUrl.pathname === './') {
+            event.respondWith(caches.match("./index.html"));
             return;
         }
-        if (requestUrl.pathname === '/index.html') {
-            event.respondWith(caches.match("/index.html"));
+        if (requestUrl.pathname === './index.html') {
+            event.respondWith(caches.match("./index.html"));
             return;
         }
         if (requestUrl.pathname === '/restaurant.html') {
-            event.respondWith(caches.match("/restaurant.html"));
+            event.respondWith(caches.match("./restaurant.html"));
             return;
         }
     }
