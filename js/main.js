@@ -157,7 +157,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
-  li.setAttribute('tabIndex','0');
+  li.tabIndex = 0;
   let imgPath = DBHelper.imageUrlForRestaurant(restaurant);
   const imgPath_1x = imgPath.replace(/(\.[\w\d_-]+)$/i, '_1x$1'); // get the small resolution of the image
   const image = document.createElement('img');
