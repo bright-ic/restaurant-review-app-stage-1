@@ -67,7 +67,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 nav {
   width: 100% ;
-  min-height: 60px;
+  min-height: 50px;
   background-color: #252831;
   text-align:center;
   z-index: 1001;
