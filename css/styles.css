@@ -57,14 +57,23 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #ff0;
 }
 /* ====================== Navigation ====================== */
-nav {
+#restaurant-top-nav {
   width: calc(100% - 30px);
-  min-height: 60px;
+  height: 80px;
   background-color: #252831;
   text-align:center;
   padding: 15px;
+  margin: 0;
+}
+
+nav {
+  width: 100% ;
+  min-height: 60px;
+  background-color: #252831;
+  text-align:center;
   z-index: 1001;
 }
+
 nav h1 {
   margin: auto;
 }
@@ -75,13 +84,14 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
+  padding: 10px 40px 16px;
+  font-size: 30px;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  background-color: #eee;
 }
 
 /* Display list items side by side */
