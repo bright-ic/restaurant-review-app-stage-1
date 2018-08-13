@@ -59,7 +59,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 /* ====================== Navigation ====================== */
 #restaurant-top-nav {
   width: calc(100% - 30px);
-  height: 80px;
   background-color: #252831;
   text-align:center;
   padding: 15px;
