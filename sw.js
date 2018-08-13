@@ -32,7 +32,6 @@ self.addEventListener('install', event => {
         })
     );
 });
-
 /**************************Service worker Activate event listener ******************************************/
 self.addEventListener('activate', event =>{
     event.waitUntil(
@@ -51,7 +50,6 @@ self.addEventListener('activate', event =>{
       })
     );
 });
-
 /**************************Service worker Fetch event listener ******************************************/
 self.addEventListener('fetch', event => {
     
@@ -74,7 +72,6 @@ self.addEventListener('fetch', event => {
 
     event.respondWith(serveFromCatchOrNetwork(event.request));
 });
-
 /****************nETWORK FETCHING SCRIPT*************************************************/
  serveFromCatchOrNetwork = request => {
     const storageUrl = request.url;
@@ -94,4 +91,3 @@ self.addEventListener('fetch', event => {
       });
     });
 };
-/*************************************************************************************************************/
